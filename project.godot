@@ -10,14 +10,15 @@ config_version=5
 
 [application]
 
-config/name="Godot Game Settings"
-config/description="Create and manage game settings in Godot Engine."
+config/name="Godot Game Settings - Demo"
+config/description="A demo for the Godot Game Setting plugin."
+run/main_scene="res://demo/src/start_scn.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [audio]
 
-buses/default_bus_layout=""
+buses/default_bus_layout="res://demo/default_bus_layout.tres"
 
 [autoload]
 
