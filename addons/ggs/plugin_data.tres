@@ -66,7 +66,7 @@ value_hint_string = ""
 resource_name = "music_volume"
 script = ExtResource("6_msyy7")
 bus_name = "Music"
-current = 37.0
+current = 50.0
 default = 50.0
 name = "music_volume"
 category = "audio"
@@ -149,7 +149,7 @@ value_hint_string = "640 x 480,800 x 600,1280 x 720,1366 x 768"
 [sub_resource type="Resource" id="Resource_a1bc6"]
 resource_name = "vsync_mode"
 script = ExtResource("19_ltugk")
-current = true
+current = 1
 default = true
 name = "vsync_mode"
 category = "display"
@@ -356,18 +356,19 @@ settings = {
 }
 item_order = Array[Resource("res://addons/ggs/classes/resources/ggs_setting.gd")]([SubResource("Resource_x0sfi"), SubResource("Resource_0x0f4"), SubResource("Resource_nm2oy"), SubResource("Resource_u410t"), SubResource("Resource_jpu8a"), SubResource("Resource_bj8mn"), SubResource("Resource_h2ht3"), SubResource("Resource_t25y8")])
 
-[sub_resource type="Resource" id="Resource_vif0j"]
-resource_name = "Difficulty"
-script = ExtResource("8_7gngp")
-current = 1
-default = 1
-name = "Difficulty"
+[sub_resource type="Resource" id="Resource_q1lxx"]
+resource_name = "Window Scale"
+script = ExtResource("10_cqxnr")
+scales = Array[float]([])
+current = null
+default = null
+name = "Window Scale"
 category = ""
-icon = ExtResource("7_smn4t")
-desc = "No description available."
+icon = ExtResource("9_6y8qc")
+desc = "Change window size by multiplying its width and height by a specific value."
 value_type = 2
 value_hint = 2
-value_hint_string = "Easy,Medium,Hard"
+value_hint_string = ""
 
 [sub_resource type="Resource" id="Resource_1vktw"]
 resource_name = "Shuriken Count"
@@ -381,6 +382,32 @@ desc = "No description available."
 value_type = 2
 value_hint = 1
 value_hint_string = "0, 100"
+
+[sub_resource type="Resource" id="Resource_le0sr"]
+resource_name = "VSync Mode"
+script = ExtResource("19_ltugk")
+current = true
+default = true
+name = "VSync Mode"
+category = ""
+icon = ExtResource("7_smn4t")
+desc = "No description available."
+value_type = 1
+value_hint = 0
+value_hint_string = ""
+
+[sub_resource type="Resource" id="Resource_vif0j"]
+resource_name = "Difficulty"
+script = ExtResource("8_7gngp")
+current = 1
+default = 1
+name = "Difficulty"
+category = ""
+icon = ExtResource("7_smn4t")
+desc = "No description available."
+value_type = 2
+value_hint = 2
+value_hint_string = "Easy,Medium,Hard"
 
 [sub_resource type="Resource" id="Resource_ajwov"]
 resource_name = "Player Name"
@@ -436,19 +463,6 @@ value_type = 3
 value_hint = 1
 value_hint_string = "0,100"
 
-[sub_resource type="Resource" id="Resource_le0sr"]
-resource_name = "VSync Mode"
-script = ExtResource("19_ltugk")
-current = true
-default = true
-name = "VSync Mode"
-category = ""
-icon = ExtResource("7_smn4t")
-desc = "No description available."
-value_type = 1
-value_hint = 0
-value_hint_string = ""
-
 [sub_resource type="Resource" id="Resource_v35md"]
 resource_name = "Window Size"
 script = ExtResource("12_2x8ap")
@@ -489,20 +503,6 @@ value_type = 1
 value_hint = 0
 value_hint_string = ""
 
-[sub_resource type="Resource" id="Resource_q1lxx"]
-resource_name = "Window Scale"
-script = ExtResource("10_cqxnr")
-scales = Array[float]([])
-current = null
-default = null
-name = "Window Scale"
-category = ""
-icon = ExtResource("9_6y8qc")
-desc = "Change window size by multiplying its width and height by a specific value."
-value_type = 2
-value_hint = 2
-value_hint_string = ""
-
 [sub_resource type="Resource" id="Resource_c76kq"]
 resource_name = "Window Size"
 script = ExtResource("12_2x8ap")
@@ -526,7 +526,7 @@ categories = {
 "input": SubResource("Resource_m408v")
 }
 category_order = Array[ExtResource("1_8bdj4")]([SubResource("Resource_76fn7"), SubResource("Resource_7r8vp"), SubResource("Resource_m408v"), SubResource("Resource_jx6s4")])
-recent_settings = Array[Resource("res://addons/ggs/classes/resources/ggs_setting.gd")]([SubResource("Resource_vif0j"), SubResource("Resource_1vktw"), SubResource("Resource_ajwov"), SubResource("Resource_p4b8s"), SubResource("Resource_2m0hx"), SubResource("Resource_p6nle"), SubResource("Resource_le0sr"), SubResource("Resource_v35md"), SubResource("Resource_imf53")])
+recent_settings = Array[Resource("res://addons/ggs/classes/resources/ggs_setting.gd")]([SubResource("Resource_q1lxx"), SubResource("Resource_1vktw"), SubResource("Resource_le0sr"), SubResource("Resource_vif0j"), SubResource("Resource_ajwov"), SubResource("Resource_p4b8s"), SubResource("Resource_2m0hx"), SubResource("Resource_p6nle"), SubResource("Resource_v35md"), SubResource("Resource_imf53")])
 setting_list_cache = Array[Resource("res://addons/ggs/classes/resources/ggs_setting.gd")]([SubResource("Resource_2m0hx"), SubResource("Resource_p6nle"), SubResource("Resource_vif0j"), SubResource("Resource_u77pt"), SubResource("Resource_q1lxx"), SubResource("Resource_c76kq"), SubResource("Resource_p4b8s"), SubResource("Resource_ajwov"), SubResource("Resource_1vktw"), SubResource("Resource_le0sr")])
 dir_settings = "res://game_settings/settings"
 dir_components = "res://game_settings/components"
