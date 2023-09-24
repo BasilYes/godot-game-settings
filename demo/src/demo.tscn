@@ -1,6 +1,5 @@
-[gd_scene load_steps=50 format=3 uid="uid://b7grj0uvaid7s"]
+[gd_scene load_steps=49 format=3 uid="uid://b7grj0uvaid7s"]
 
-[ext_resource type="Script" path="res://demo/src/demo.gd" id="1_b1ot8"]
 [ext_resource type="PackedScene" uid="uid://bhkyf3l4ee800" path="res://game_settings/components/checkbox/checkbox.tscn" id="2_0y5i3"]
 [ext_resource type="PackedScene" uid="uid://cha8xesfthpfk" path="res://game_settings/components/switch/switch.tscn" id="2_2ix7f"]
 [ext_resource type="AudioStream" uid="uid://cs1hap46ms4l4" path="res://demo/assets/shining_force_2_town.mp3" id="2_jpjf7"]
@@ -61,7 +60,7 @@ value_hint_string = "640 x 480,800 x 600,1280 x 720,1366 x 768"
 [sub_resource type="Resource" id="Resource_a1bc6"]
 resource_name = "vsync_mode"
 script = ExtResource("10_qfhkt")
-current = true
+current = 1
 default = true
 name = "vsync_mode"
 category = "display"
@@ -117,7 +116,7 @@ value_hint_string = ""
 resource_name = "music_volume"
 script = ExtResource("12_injam")
 bus_name = "Music"
-current = 37.0
+current = 50.0
 default = 50.0
 name = "music_volume"
 category = "audio"
@@ -321,7 +320,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_b1ot8")
 
 [node name="Center" type="CenterContainer" parent="."]
 layout_mode = 1

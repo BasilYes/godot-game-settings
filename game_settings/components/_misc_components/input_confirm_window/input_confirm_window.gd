@@ -8,10 +8,10 @@ enum Type {KEYBOARD, GAMEPAD}
 @export var show_progress_bar: bool = true
 @export_group("Text")
 @export var btn_listening: String = ". . ."
-@export var title_listening: String = "Listening for Input"
-@export var title_confirm: String = "Confirm Input"
-@export var timeout_text: String = "Timed Out"
-@export var already_exists_msg: String = "Input already exists ({action})"
+@export var title_listening: String = tr("Listening for Input")
+@export var title_confirm: String = tr("Confirm Input")
+@export var timeout_text: String = tr("Timed Out")
+@export var already_exists_msg: String = tr("Input already exists ({action})")
 
 var chosen_input: InputEvent
 var src: ggsUIComponent

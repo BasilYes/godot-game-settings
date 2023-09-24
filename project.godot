@@ -12,8 +12,9 @@ config_version=5
 
 config/name="Godot Game Settings - Demo"
 config/description="A demo for the Godot Game Setting plugin."
+config/tags=PackedStringArray("addon_tamplate")
 run/main_scene="res://demo/src/start_scn.tscn"
-config/features=PackedStringArray("4.0", "GL Compatibility")
+config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [audio]
@@ -74,6 +75,7 @@ move_down={
 [internationalization]
 
 locale/translation_remaps={}
+locale/translations_pot_files=PackedStringArray("res://game_settings/components/_misc_components/input_confirm_window/input_confirm_window.gd")
 
 [rendering]
 
